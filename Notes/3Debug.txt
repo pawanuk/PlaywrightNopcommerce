@@ -1,0 +1,6 @@
+To get a detailed log for debugging:step1)$env:DEBUG="pw:api"
+step2)npx playwright test yourTestName.test.ts --debug --project=chromium
+(Remember, setting the environment variable in this manner will only apply 
+it to the current PowerShell session. Once you close the PowerShell window 
+or start a new session, the DEBUG environment variable setting will no longer
+ be in effect.)

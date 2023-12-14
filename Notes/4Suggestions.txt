@@ -1,0 +1,24 @@
+Issue:
+The issue you're encountering, where await this.page.goto('https://demo.nopcommerce.com/') works initially but fails when executed later, suggests that there might be some state changes on the website after the first navigation that affect subsequent navigations. This could be due to several factors like session states, cookies, or dynamic changes on the website after certain actions.
+
+Suggestion:1. Refresh the Page Before Navigating Again
+await this.page.goto('https://demo.nopcommerce.com/'); // Initial navigation
+// ... actions on the page ...
+await this.page.reload(); // Reload the page
+await this.page.goto('https://demo.nopcommerce.com/'); // Navigate again
+2. Check for Pop-ups or Overlays
+// Example: Close a pop-up if it exists
+const popUpCloseButton = page.locator('selector-for-close-button');
+if (await popUpCloseButton.isVisible()) {
+    await popUpCloseButton.click();
+}
+await this.page.goto('https://demo.nopcommerce.com/');
+3. Use Different Methods for Navigation
+// Example: Clicking a home button
+await this.page.click('selector-for-home-button');
+
+// Or using back navigation
+await this.page.goBack();
+4. Add Checks for Network Idle or Load States
+await this.page.waitForLoadState('networkidle'); // Wait for network idle
+await this.page.goto('https://demo.nopcommerce.com/');

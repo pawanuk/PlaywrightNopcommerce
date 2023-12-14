@@ -1,0 +1,4 @@
+Git hub repository:initial creation etc
+Command to run tests
+Debug
+Suggestions

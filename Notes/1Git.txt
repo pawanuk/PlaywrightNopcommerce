@@ -1,0 +1,39 @@
+# Create a New Repository on GitHub:
+# 1. Go to https://github.com/
+# 2. Sign in to your account.
+# 3. Click on the + icon in the top right corner and select New repository.
+# 4. Enter a repository name.
+# 5. Choose Public or Private.
+# 6. Optionally, initialize with a README.
+# 7. Click Create repository.
+
+# Clone the Repository to Your Local Machine:
+# 1. Copy the URL under Clone with HTTPS.
+# 2. Open your command line or terminal.
+# 3. Navigate to where you want to clone the repository.
+# 4. Run:
+git clone [URL you copied]
+# 5. Enter the directory:
+cd [repository name]
+
+# Make Changes Locally:
+# 1. Open the repository folder in your code editor.
+# 2. Make changes or add new files.
+# 3. Save changes.
+
+# Push Changes to GitHub:
+# 1. Go back to your terminal.
+# 2. Stage changes:
+git add .
+# 3. Commit changes:
+git commit -m "Your commit message"
+# 4. Push changes:
+git push origin main
+# Replace 'main' with your branch name if different.
+
+# Verify Changes on GitHub:
+# 1. Go to your GitHub repository page.
+# 2. Check the Code tab for changes.
+
+# For Future Changes:
+# Repeat the 'Make Changes Locally' and 'Push Changes to GitHub' steps.

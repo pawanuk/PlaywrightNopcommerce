@@ -1,0 +1,5 @@
+node tests/runTests.js searchAndCart.test.ts --headed --project=chromium
+in the above command the test is run and the report opens automatically
+or npx playwright test searchAndCart.test.ts --headed --project=chromium
+In this above command we have to run npx playwright show-report  also to open report
+
